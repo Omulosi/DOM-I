@@ -37,6 +37,27 @@ const siteContent = {
   },
 };
 
-// Update the img src for the logo
+
+// ##############  Header Section ####################
+
+// logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// navigation
+
+let navItemOne = document.querySelector('nav > a:nth-child(1)');
+let navItemTwo = document.querySelector('nav > a:nth-child(2)');
+let navItemThree = document.querySelector('nav > a:nth-child(3)');
+let navItemFour = document.querySelector('nav > a:nth-child(4)');
+let navItemFive = document.querySelector('nav > a:nth-child(5)');
+let navItemSix = document.querySelector('nav > a:nth-child(6)');
+
+navItemOne.textContent = siteContent['nav']['nav-item-1'];
+navItemTwo.textContent = siteContent['nav']['nav-item-2'];
+navItemThree.textContent = siteContent['nav']['nav-item-3'];
+navItemFour.textContent = siteContent['nav']['nav-item-4'];
+navItemFive.textContent = siteContent['nav']['nav-item-5'];
+navItemSix.textContent = siteContent['nav']['nav-item-6'];
+
+
