@@ -94,3 +94,11 @@ visionH4.textContent = siteContent['main-content']['vision-h4'];
 servicesContent.textContent = siteContent['main-content']['services-content'];
 productContent.textContent = siteContent['main-content']['product-content'];
 visionContent.textContent = siteContent['main-content']['vision-content'];
+
+// ########### Contact section ######################
+//let contactH4 = document.querySelector('.contact > h4');
+let [contactH4, address, phone, email] = document.querySelectorAll('.contact > * ');
+contactH4.textContent = siteContent['contact']['contact-h4'];
+address.textContent = siteContent['contact']['address'];
+phone.textContent = siteContent['contact']['phone'];
+email.textContent = siteContent['contact']['email'];
