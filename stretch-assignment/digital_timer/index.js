@@ -5,6 +5,7 @@ let MAX = 10; // millisec
 let maxMilliSec = 1000; // millisec
 let STEP = 10; // millisec
 let sec = 0;
+let timerID;
 
 let strTime, msH, msT, msO, secT, secO;
 
@@ -36,7 +37,7 @@ function timer() {
   if (time >= 1000) {
     sec  = sec + 1;
     if (sec >= MAX) {
-      clearInterval(id);
+      clearInterval(timerID);
       [...document.querySelectorAll('.digits')].forEach(elem => elem.classList.add('redDigit'));
     }
     time = 0;
@@ -49,4 +50,21 @@ function timer() {
 
 }
 
-let id = setInterval(timer, STEP);
+// start button
+let startBtn = document.createElement('button');
+startBtn.textContent = 'Start';
+startBtn.classList.add('btn');
+
+let resetBtn = document.createElement('button');
+resetBtn.textContent = 'Reset';
+resetBtn.classList.add('btn');
+
+let controls = document.querySelector('.controls');
+controls.appendChild(startBtn);
+controls.appendChild(resetBtn);
+
+
+startBtn.addEventListener('click', (e) => {
+  timerID = setInterval(timer, STEP);
+  e.target.disabled = 'true';
+});
