@@ -112,3 +112,18 @@ copyRight.textContent = siteContent['footer']['copyright'];
 // Task 3
 let navElems = Array.from(document.querySelectorAll('nav > a'));
 navElems.forEach(elem => elem.style.color = 'green');
+
+let nav = document.querySelector('nav');
+
+let login = document.createElement('a');
+login.textContent = 'Login';
+login.style.color = 'green';
+
+nav.appendChild(login);
+
+let home = document.createElement('a');
+home.textContent = 'Home';
+home.style.color = 'green';
+
+nav.prepend(home);
+
