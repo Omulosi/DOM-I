@@ -69,3 +69,26 @@ h1.innerHTML = siteContent['cta']['h1'];
 ctaBtn.textContent = siteContent['cta']['button'];
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
 
+// ####################### Main Content section #################
+// #### top content
+let [featuresH4, aboutH4 ] = Array.from(document.querySelectorAll('.top-content > .text-content > h4'));
+let  [featuresContent, aboutContent ] = document.querySelectorAll('.top-content > .text-content > p');
+let middleImg = document.querySelector('#middle-img');
+
+featuresH4.textContent = siteContent['main-content']['features-h4'];
+aboutH4.textContent = siteContent['main-content']['about-h4'];
+
+featuresContent.textContent = siteContent['main-content']['features-content'];
+aboutContent.textContent = siteContent['main-content']['about-content'];
+
+middleImg.src = siteContent['main-content']['middle-img-src'];
+
+// #### bottom content
+let [servicesH4, productH4 ] = document.querySelectorAll('.bottom-content > .text-content > h4');
+let  [servicesContent, productContent ] = document.querySelectorAll('.bottom-content > .text-content > p');
+
+servicesH4.textContent = siteContent['main-content']['services-h4'];
+productH4.textContent = siteContent['main-content']['product-h4'];
+
+servicesContent.textContent = siteContent['main-content']['services-content'];
+productContent.textContent = siteContent['main-content']['product-content'];
