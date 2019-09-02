@@ -84,11 +84,13 @@ aboutContent.textContent = siteContent['main-content']['about-content'];
 middleImg.src = siteContent['main-content']['middle-img-src'];
 
 // #### bottom content
-let [servicesH4, productH4 ] = document.querySelectorAll('.bottom-content > .text-content > h4');
-let  [servicesContent, productContent ] = document.querySelectorAll('.bottom-content > .text-content > p');
+let [servicesH4, productH4, visionH4 ] = document.querySelectorAll('.bottom-content > .text-content > h4');
+let  [servicesContent, productContent, visionContent ] = document.querySelectorAll('.bottom-content > .text-content > p');
 
 servicesH4.textContent = siteContent['main-content']['services-h4'];
 productH4.textContent = siteContent['main-content']['product-h4'];
+visionH4.textContent = siteContent['main-content']['vision-h4'];
 
 servicesContent.textContent = siteContent['main-content']['services-content'];
 productContent.textContent = siteContent['main-content']['product-content'];
+visionContent.textContent = siteContent['main-content']['vision-content'];
