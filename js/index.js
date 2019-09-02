@@ -102,3 +102,8 @@ contactH4.textContent = siteContent['contact']['contact-h4'];
 address.textContent = siteContent['contact']['address'];
 phone.textContent = siteContent['contact']['phone'];
 email.textContent = siteContent['contact']['email'];
+
+
+// ################ Footer section #######################
+let copyRight = document.querySelector('footer > p');
+copyRight.textContent = siteContent['footer']['copyright'];
