@@ -107,3 +107,8 @@ email.textContent = siteContent['contact']['email'];
 // ################ Footer section #######################
 let copyRight = document.querySelector('footer > p');
 copyRight.textContent = siteContent['footer']['copyright'];
+
+
+// Task 3
+let navElems = Array.from(document.querySelectorAll('nav > a'));
+navElems.forEach(elem => elem.style.color = 'green');
