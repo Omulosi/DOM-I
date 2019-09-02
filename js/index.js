@@ -60,4 +60,12 @@ navItemFour.textContent = siteContent['nav']['nav-item-4'];
 navItemFive.textContent = siteContent['nav']['nav-item-5'];
 navItemSix.textContent = siteContent['nav']['nav-item-6'];
 
+//################# cta section ######################
+let h1 = document.querySelector('.cta-text > h1');
+let ctaBtn = document.querySelector('.cta-text > button');
+let ctaImg = document.querySelector('#cta-img');
+
+h1.innerHTML = siteContent['cta']['h1'];
+ctaBtn.textContent = siteContent['cta']['button'];
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
 
