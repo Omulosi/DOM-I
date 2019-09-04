@@ -1,5 +1,7 @@
-body {
+.timer {
+   height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -11,4 +13,24 @@ body {
 
 .redDigit {
   color: red;
+}
+
+.btn {
+	display: inline-block;
+	vertical-align: center;
+	border: 1px solid #444;
+	background: transparent;
+	color: #444;
+	padding: 0.6em 2.5em;
+	font-size: 1.5em;
+	letter-spacing: 0.2em;
+	cursor: pointer;
+}
+
+.controls {
+	margin-top: 1em;
+}
+
+.controls > .btn + .btn {
+	border-left: 1px solid #fff;
 }
